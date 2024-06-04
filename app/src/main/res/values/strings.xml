@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CalculadoraIMC</string>
+    <string name="mainActivity_clickButton">Click it</string>
+    <string name="mainActivity_welcomeTextView">HELLO!</string>
+    <string name="mainActivity_clickedButton">Clicked</string>
+    <string name="mainActivity_byeTextView">Bye!</string>
+
 </resources>
