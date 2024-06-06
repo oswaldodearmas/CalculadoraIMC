@@ -8,138 +8,224 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/BMITextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#A68CD5"
-        android:padding="10dp"
-        android:text="@string/mainActivity_MBITextView"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.607" />
 
-    <TextView
-        android:id="@+id/titleTextView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#A567D3"
-        android:gravity="center"
-        android:text="@string/mainActivity_BMITitleTextView"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-    <SeekBar
-        android:id="@+id/heightSeekBar"
-        android:layout_width="356dp"
-        android:layout_height="44dp"
-        android:max="300"
-        android:progress="170"
-        android:progressBackgroundTint="@color/black"
-        android:progressTint="#673AB7"
-        android:thumb="@android:drawable/btn_star_big_on"
-        android:thumbTint="@color/design_default_color_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/titleTextView"
-        app:layout_constraintVertical_bias="0.197" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/titleCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#A567D3"
+            android:padding="10dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/heightTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:height="60dp"
-        android:gravity="center"
-        android:text="170 cm"
-        android:textAlignment="gravity"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/heightSeekBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/mainActivity_BMITitleTextView"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/weightTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:height="60dp"
-        android:gravity="center"
-        android:text="75 Kg"
-        android:textAlignment="gravity"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/heightCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#A567D3"
+            android:padding="10dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            >
 
-    <Button
-        android:id="@+id/moreButton"
-        android:layout_width="70dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#A68CD5"
-        android:gravity="center"
-        android:text="+"
-        android:textAlignment="gravity"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.597"
-        app:layout_constraintStart_toEndOf="@+id/weightTextView"
-        app:layout_constraintTop_toBottomOf="@+id/introduceWeightTextView" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/introduceWeightTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mainActivity_tagWeightTextView"
-        android:textAlignment="textStart"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/weightTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                <TextView
+                    android:id="@+id/introduceHeightTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/mainActivity_tagHeightTextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/heightTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/lessButton"
-        android:layout_width="70dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#A68CD5"
-        android:gravity="center"
-        android:text="-"
-        android:textAlignment="gravity"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/weightTextView"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/introduceWeightTextView" />
+                <TextView
+                    android:id="@+id/heightTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="60dp"
+                    android:gravity="center"
+                    android:text="@string/height_Text"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/heightSeekBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/introduceHeightTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mainActivity_tagHeightTextView"
-        android:textAlignment="textStart"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/heightTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                <SeekBar
+                    android:id="@+id/heightSeekBar"
+                    android:layout_width="356dp"
+                    android:layout_height="44dp"
+                    android:max="300"
+                    android:progress="170"
+                    android:progressBackgroundTint="@color/black"
+                    android:progressTint="#673AB7"
+                    android:paddingBottom="15dp"
+                    android:thumb="@android:drawable/btn_star_big_on"
+                    android:thumbTint="@color/design_default_color_primary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.49"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/titleTextView"
+                    app:layout_constraintVertical_bias="0.197" />
+            </LinearLayout>
 
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/weightCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#A567D3"
+            android:padding="10dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/introduceWeightTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/mainActivity_tagWeightTextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/weightTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <Button
+                        android:id="@+id/lessButton"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textAlignment="gravity"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/weightTextView"
+                        app:layout_constraintHorizontal_bias="0.406"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/introduceWeightTextView" />
+
+                    <TextView
+                        android:id="@+id/weightTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:height="60dp"
+                        android:gravity="center"
+                        android:text="@string/weight_Text"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.366" />
+
+                    <Button
+                        android:id="@+id/moreButton"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textAlignment="gravity"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.597"
+                        app:layout_constraintStart_toEndOf="@+id/weightTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/introduceWeightTextView" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/BMICardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#A567D3"
+            android:padding="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/BMITextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/mainActivity_MBITextView"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainActivity_calculateButtonText"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

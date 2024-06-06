@@ -2,7 +2,10 @@
     <string name="app_name">CalculadoraIMC</string>
     <string name="mainActivity_BMITitleTextView">BMI Calculator</string>
     <string name="mainActivity_tagHeightTextView">Introduce your height:</string>
-    <string name="mainActivity_tagWeightTextView">Introduce your weight</string>
-    <string name="mainActivity_MBITextView">BMI: 107.14\nYou\'re healthy</string>
+    <string name="mainActivity_tagWeightTextView">Introduce your weight:</string>
+    <string name="mainActivity_MBITextView">BMI: Introduce your data and click calculate</string>
+    <string name="mainActivity_calculateButtonText">Calculate</string>
+    <string name="height_Text" translatable="false">%1$s cm</string>
+    <string name="weight_Text" translatable="false">%1$s Kg</string>
 
 </resources>
