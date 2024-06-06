@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CalculadoraIMC</string>
-    <string name="mainActivity_clickButton">Púyalo</string>
-    <string name="mainActivity_welcomeTextView">HOLA!!!</string>
-    <string name="mainActivity_clickedButton">Puyado</string>
-    <string name="mainActivity_byeTextView">Adios!</string>
+    <string name="mainActivity_MBITextView">IMC: 107.14 Saludable</string>
+    <string name="mainActivity_BMITitleTextView">Calculadora de IMC</string>
+    <string name="mainActivity_tagHeightTextView">Introduce tu altura</string>
+    <string name="mainActivity_tagWeightTextView">Introduce tu peso</string>
 </resources>

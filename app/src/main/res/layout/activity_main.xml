@@ -5,30 +5,141 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/welcomeTextView"
+        android:id="@+id/BMITextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/mainActivity_welcomeTextView"
-        android:textSize="30sp"
+        android:background="#A68CD5"
+        android:padding="10dp"
+        android:text="@string/mainActivity_MBITextView"
         android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#A567D3"
+        android:gravity="center"
+        android:text="@string/mainActivity_BMITitleTextView"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/clickButton"
+    <SeekBar
+        android:id="@+id/heightSeekBar"
+        android:layout_width="356dp"
+        android:layout_height="44dp"
+        android:max="300"
+        android:progress="170"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="#673AB7"
+        android:thumb="@android:drawable/btn_star_big_on"
+        android:thumbTint="@color/design_default_color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <TextView
+        android:id="@+id/heightTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/mainActivity_clickButton"
-        android:backgroundTint="#001099"
+        android:height="60dp"
+        android:gravity="center"
+        android:text="170 cm"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/heightSeekBar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/weightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:gravity="center"
+        android:text="75 Kg"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <Button
+        android:id="@+id/moreButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#A68CD5"
+        android:gravity="center"
+        android:text="+"
+        android:textAlignment="gravity"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toEndOf="@+id/weightTextView"
+        app:layout_constraintTop_toBottomOf="@+id/introduceWeightTextView" />
+
+    <TextView
+        android:id="@+id/introduceWeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mainActivity_tagWeightTextView"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/weightTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/lessButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#A68CD5"
+        android:gravity="center"
+        android:text="-"
+        android:textAlignment="gravity"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/weightTextView"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introduceWeightTextView" />
+
+    <TextView
+        android:id="@+id/introduceHeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mainActivity_tagHeightTextView"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/heightTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

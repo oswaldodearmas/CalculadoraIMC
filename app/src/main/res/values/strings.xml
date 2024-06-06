@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">CalculadoraIMC</string>
-    <string name="mainActivity_clickButton">Click it</string>
-    <string name="mainActivity_welcomeTextView">HELLO!</string>
-    <string name="mainActivity_clickedButton">Clicked</string>
-    <string name="mainActivity_byeTextView">Bye!</string>
+    <string name="mainActivity_BMITitleTextView">BMI Calculator</string>
+    <string name="mainActivity_tagHeightTextView">Introduce your height:</string>
+    <string name="mainActivity_tagWeightTextView">Introduce your weight</string>
+    <string name="mainActivity_MBITextView">BMI: 107.14\nYou\'re healthy</string>
 
 </resources>
