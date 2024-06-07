@@ -7,5 +7,10 @@
     <string name="mainActivity_calculateButtonText">Calculate</string>
     <string name="height_Text" translatable="false">%1$s cm</string>
     <string name="weight_Text" translatable="false">%1$s Kg</string>
+    <string name="underweight_Text">BMI: %1$s%nYou\'re underweight</string>
+    <string name="okweight_Text">BMI: %1$s%nYou\'re OK!</string>
+    <string name="overweight_Text">BMI: %1$s%nYou\'re overweight</string>
+    <string name="obeseweight_Text">BMI: %1$s%nYou\'re obese</string>
+
 
 </resources>

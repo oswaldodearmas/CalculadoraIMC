@@ -6,4 +6,8 @@
     <string name="mainActivity_tagHeightTextView">Introduce tu altura:</string>
     <string name="mainActivity_tagWeightTextView">Introduce tu peso:</string>
     <string name="mainActivity_calculateButtonText">Calcular</string>
+    <string name="underweight_Text">BMI: %1$s%nEstás muy delgado</string>
+    <string name="okweight_Text">BMI: %1$s%nEstás bien!</string>
+    <string name="overweight_Text">BMI: %1$s%nEstás gordit@</string>
+    <string name="obeseweight_Text">BMI: %1$s%nEstás obes@</string>
 </resources>
