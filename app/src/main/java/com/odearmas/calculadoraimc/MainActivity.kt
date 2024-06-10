@@ -148,34 +148,37 @@ class MainActivity : AppCompatActivity() {
     fun calculateBMI(): String {
         Log.d("INICIO_CALC","Se inicia la ejecución de Calculadora")
 
-        var BMI: Float = (currentWeight / ((currentHeight.toFloat() / 100)).pow(2))
-        var decimalFormat = DecimalFormat("#.##")
-        var result: String = decimalFormat.format(BMI)
+        val BMI: Float = (currentWeight / ((currentHeight.toFloat() / 100)).pow(2))
+        val decimalFormat = DecimalFormat("#.##")
+        val result: String = decimalFormat.format(BMI)
         when (BMI) {
             in 0.0f..18.5f -> {
                 BMITextView.setTextColor(getColor(R.color.red))
                 BMICardView.background.setTint(getColor(R.color.yellow))
+                Log.d("FIN_CALC","Finaliza la ejecución de Calculadora")
                 return getString(R.string.underweight_Text, result)
             }
 
             in 18.5f..24.9f -> {
                 BMITextView.setTextColor(getColor(R.color.yellow))
                 BMICardView.background.setTint(getColor(R.color.green))
+                Log.d("FIN_CALC","Finaliza la ejecución de Calculadora")
                 return getString(R.string.okweight_Text, result)
             }
 
             in 24.9f..29.9f -> {
                 BMITextView.setTextColor(getColor(R.color.green))
                 BMICardView.background.setTint(getColor(R.color.orange))
+                Log.d("FIN_CALC","Finaliza la ejecución de Calculadora")
                 return getString(R.string.overweight_Text, result)
             }
 
             else -> {
                 BMITextView.setTextColor(getColor(R.color.white))
                 BMICardView.background.setTint(getColor(R.color.red))
+                Log.d("FIN_CALC","Finaliza la ejecución de Calculadora")
                 return getString(R.string.obeseweight_Text, result)
             }
         }
-        Log.d("FIN_CALC","Finaliza la ejecución de Calculadora")
     }
 }
