@@ -108,12 +108,12 @@ class MainActivity : AppCompatActivity() {
 //                setWeightText()
 //            }
 //        }
-        moreButton.setOnClickListener {
-            if (currentWeight >= 35 && currentWeight < 200) {
-                ++currentWeight
-                setWeightText()
-            }
-        }
+//        moreButton.setOnClickListener {
+//            if (currentWeight >= 35 && currentWeight < 200) {
+//                ++currentWeight
+//                setWeightText()
+//            }
+//        }
 
         heightSeekBar.setOnSeekBarChangeListener(
             object : SeekBar.OnSeekBarChangeListener {
