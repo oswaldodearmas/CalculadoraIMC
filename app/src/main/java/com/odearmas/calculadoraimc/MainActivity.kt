@@ -137,11 +137,11 @@ class MainActivity : AppCompatActivity() {
 
 
     fun setHeightText() {
-        heightTextView.text = getString(R.string.height_Text, currentHeight.toString())
+        heightTextView.text = getString(R.string.mainActivity_height_Text, currentHeight.toString())
     }
 
     fun setWeightText() {
-        weightTextView.text = getString(R.string.weight_Text, currentWeight.toString())
+        weightTextView.text = getString(R.string.mainActivity_weight_Text, currentWeight.toString())
     }
 
 
@@ -156,28 +156,28 @@ class MainActivity : AppCompatActivity() {
                 BMITextView.setTextColor(getColor(R.color.red))
                 BMICardView.background.setTint(getColor(R.color.yellow))
                 Log.d("FIN_CALC","Finaliza la ejecución de Calculadora")
-                return getString(R.string.underweight_Text, result)
+                return getString(R.string.mainActivity_underweight_Text, result)
             }
 
             in 18.5f..24.9f -> {
                 BMITextView.setTextColor(getColor(R.color.yellow))
                 BMICardView.background.setTint(getColor(R.color.green))
                 Log.d("FIN_CALC","Finaliza la ejecución de Calculadora")
-                return getString(R.string.okweight_Text, result)
+                return getString(R.string.mainActivity_okWeight_Text, result)
             }
 
             in 24.9f..29.9f -> {
                 BMITextView.setTextColor(getColor(R.color.green))
                 BMICardView.background.setTint(getColor(R.color.orange))
                 Log.d("FIN_CALC","Finaliza la ejecución de Calculadora")
-                return getString(R.string.overweight_Text, result)
+                return getString(R.string.mainActivity_overweight_Text, result)
             }
 
             else -> {
                 BMITextView.setTextColor(getColor(R.color.white))
                 BMICardView.background.setTint(getColor(R.color.red))
                 Log.d("FIN_CALC","Finaliza la ejecución de Calculadora")
-                return getString(R.string.obeseweight_Text, result)
+                return getString(R.string.mainActivity_obeseWeight_Text, result)
             }
         }
     }

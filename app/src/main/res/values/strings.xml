@@ -5,12 +5,12 @@
     <string name="mainActivity_tagWeightTextView">Introduce your weight:</string>
     <string name="mainActivity_MBITextView">BMI: Introduce your data and click calculate</string>
     <string name="mainActivity_calculateButtonText">Calculate</string>
-    <string name="height_Text" translatable="false">%1$s cm</string>
-    <string name="weight_Text" translatable="false">%1$s Kg</string>
-    <string name="underweight_Text">BMI: %1$s%nYou\'re underweight</string>
-    <string name="okweight_Text">BMI: %1$s%nYou\'re OK!</string>
-    <string name="overweight_Text">BMI: %1$s%nYou\'re overweight</string>
-    <string name="obeseweight_Text">BMI: %1$s%nYou\'re obese</string>
+    <string name="mainActivity_height_Text" translatable="false">%1$s cm</string>
+    <string name="mainActivity_weight_Text" translatable="false">%1$s Kg</string>
+    <string name="mainActivity_underweight_Text">BMI: %1$s%nYou\'re underweight</string>
+    <string name="mainActivity_okWeight_Text">BMI: %1$s%nYou\'re OK!</string>
+    <string name="mainActivity_overweight_Text">BMI: %1$s%nYou\'re overweight</string>
+    <string name="mainActivity_obeseWeight_Text">BMI: %1$s%nYou\'re obese</string>
 
 
 </resources>
